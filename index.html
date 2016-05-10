@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hailey Miller</title>
+  <!-- <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %> -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Icons Load -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--Import Google Icon Font-->
+  <link href='https://fonts.googleapis.com/css?family=Cinzel|Open+Sans' rel='stylesheet' type='text/css'>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css"  media="screen,projection"/>
+  <!--Custom CSS Rules-->
+  <link href="public/css/style.css" rel="stylesheet" type="text/css" media="screen">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class="light-blue lighten-5">
+<div class="container light-blue lighten-3">
+
+      <div class="row light-blue grey-text text-lighten-5 top-header">
+      <div class="nav-bar">
+
+      <ul class="hide-on-med-and-down contact-top">
+      <li id="contact-one" class="indigo indigo-darken-4">
+        <a href="mailto:hailey.miller91@gmail.com">
+        <i class="fa fa-envelope-square fa-2x grey-text text-lighten-5" aria-hidden="true"></i></a></li>
+      <li id="contact-two" class="indigo indigo-darken-4">
+        <a href="https://github.com/mermatriarchy">
+        <i class="fa fa-github fa-2x grey-text text-lighten-5"></i></a></li>
+        <div id="contact-style"></div>
+        </ul>
+
+
+    <div class="navbar-wrapper">
+        <h3>Hailey Miller Codes Things</h3>
+            <ul id="nav-mobile" class="hide-on-med-and-down light-blue">
+              <li> <a href="#top" class="grey-text text-lighten-5">About</a></li>
+              <li> <a href="#middle" class="grey-text text-lighten-5">Portfolio</a></li>
+              <li> <a href="#bottom" class="grey-text text-lighten-5">Contact</a></li>
+          </ul>
+          <div class="icon-fix">
+          <a href="#" data-activates="mobile-demo" class="button-collapse grey-text text-lighten-5"><i class="medium material-icons">menu</i></a>
+          </div>
+          <ul class="side-nav" id="mobile-demo">
+              <li><a href="#top">About</a></li>
+              <li><a href="#middle">Portfolio</a></li>
+              <li><a href="#bottom">Contact</a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+
+<!-- ABOUT -->
+<div class="row light-blue lighten-3" id="about-section">
+<h4 id="top">About</h4>
+<p class="flow-text">Hailey Miller is currently a student in the Web Development Immersive at
+General Assembly in New York. He's most interested in full-stack web development
+ with an emphasis on Ruby on Rails and JavaScript. His work focuses on using
+ progressive enhancement to create elegant, responsive web design for optimal
+ user-experience.</p>
+
+ <div class="more">
+  <a class="waves-effect waves-light btn blue darken-3" id="more">More</a>
+  <a class="waves-effect waves-light btn blue darken-3" id="resume" href="public/img/HMResume.pdf" target="_blank">Resume</a>
+
+  <div class="hidden">
+  <p class="flow-text">Hailey first started working in the tech industry as a translator
+  and content creator for a PR firm representing start-ups.
+  After being hired at an eCommerce company as a project manager,
+  he started to teach himself the basics of coding to improve his
+  knowledge-base for scoping projects. As it turns out, Hailey thought coding was fun,
+  and decided to make the switch to programming.</p>
+  </div>
+  </div>
+
+</div>
+<!-- PORTFOLIO -->
+<div class="row portfolio-section light-blue lighten-1 grey-text text-lighten-5">
+<h4 id="middle">Portfolio</h4>
+  <div class="row valign-wrapper">
+
+  <div class="card-fix">
+        <div class="col s12 m6 l6">
+          <div class="card medium hoverable" id="bug">
+
+            <div class="card-image">
+              <img src="public/img/heisenbug-thumb-final.png" alt="Heisenbug-tumb">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Heisenbug<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal grey-text text-darken-4">
+              <span class="card-title grey-text text-darken-4">Heisenbug<i class="material-icons right">close</i></span>
+              <p>Multi-player game built with JavaScript, jQuery, HTML and CSS.</p>
+              </div>
+
+            <div class="card-action">
+              <a href="http://mermatriarchy.github.io/" class="blue-text text-darken-3">Play</a>
+            </div>
+
+          </div>
+          </div>
+
+          <div class="col s12 m6 l6">
+          <div class="card medium hoverable" id="wine">
+
+            <div class="card-image">
+              <img src="public/img/BKWhinery-thumb.png" alt="BKWhinery-thumb">
+            </div>
+            <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4">Brooklyn Whinery<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal grey-text text-darken-4">
+              <span class="card-title">Brooklyn Whinery<i class="material-icons right">close</i></span>
+              <p>A forum where users can generate wine tasting menus based on their mood.</p>
+              <p>Built with Ruby (Sinatra framework), JavaScript, jQuery, HTML and CSS.</p>
+              </div>
+
+            <div class="card-action">
+              <a href="https://brooklyn-whinery.herokuapp.com/" class="blue-text text-darken-3">View</a>
+            </div>
+            </div>
+            </div>
+    </div>
+
+     </div>
+</div>
+<!-- CONTACT -->
+<div class="row contact-section light-blue darken-2 grey-text text-lighten-5">
+<h4 id="bottom">Contact</h4>
+<p class="flow-text">To contact Hailey, <a class="indigo-text text-lighten-4 contact-email" href="mailto:hailey.miller91@gmail.com">
+    Email</a> is best.<br>Let's keep in touch!</p>
+    <div class="contact-icons">
+    <ul>
+      <li>
+        <a href="mailto:hailey.miller91@gmail.com">
+        <i class="fa fa-envelope-square fa-3x grey-text text-lighten-5" aria-hidden="true"></i></a></li>
+      <li>
+        <a href="https://github.com/mermatriarchy">
+        <i class="fa fa-github fa-3x grey-text text-lighten-5"></i></a></li>
+      <li id="linkedin">
+        <a href="https://www.linkedin.com/in/hailey-miller-a9408164">
+        <i class="fa fa-linkedin-square fa-3x grey-text text-lighten-5" aria-hidden="true"></i></a></li>
+    </ul>
+    </div>
+</div>
+<!-- <%= yield %> -->
+<!-- FOOTER -->
+<footer class="light-blue darken-4 margin-reset">
+
+            <div class="row grey-text text-lighten-5">
+              <div class="col l6 s12">
+                <h5 id="name-header">Hailey Miller</h5>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 >Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-5" href="#top">About</a></li>
+                  <li><a class="grey-text text-lighten-5" href="#middle">Portfolio</a></li>
+                  <li><a class="grey-text text-lighten-5" href="mailto:hailey.miller91@gmail.com">Contact</a></li>
+
+                </ul>
+              </div>
+            </div>
+
+          <div class="footer-copyright">
+          <div class="container grey-text text-lighten-5" id="footer-txt">
+          May 2016 Hailey Miller
+          </div>
+          </div>
+
+        </footer>
+</div>
+</body>
+</html>
+<!--Import jQuery before materialize.js-->
+<script src="public/js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="public/js/materialize.min.js"></script>
+<script type="text/javascript" src="public/js/main.js"></script>

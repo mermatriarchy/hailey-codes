@@ -1,0 +1,161 @@
+/**/ /**/ /**/
+body{
+  text-align: center;
+}
+
+a:hover{
+  opacity: .7;
+}
+
+/*Nav Resets*/
+
+nav h3{
+  text-align: center;
+  position: static;
+  margin-top: 0;
+  padding: 1.5em;
+}
+
+.nav-bar li a{
+  text-align: center;
+  display: inline;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.nav-bar a:hover{
+  background-color:#2196f3;
+  opacity: 1;
+}
+
+#nav-mobile li{
+  display: inline;
+  padding: .5em 1em;
+}
+
+#nav-mobile li a, .side-nav li a{
+  padding: .5em;
+}
+
+/*Fixed Contact-icons styling*/
+.contact-top{
+  margin-top: 0;
+  top: -1%;
+  left: 77%;
+  position: fixed;
+  height: 3em;
+  width: 3em;
+}
+
+#contact-one{
+  padding-top: .75em;
+}
+
+#contact-style{
+  height: 0;
+  width: 0;
+  border-left: 1.5em solid transparent;
+  border-right: 1.5em solid transparent;
+  border-top: 1em solid #3f51b5;
+}
+
+.contact-top a:hover{
+  opacity: .7;
+  background-color: transparent;
+}
+
+.icon-fix a:hover{
+  background-color: transparent;
+}
+
+/*Margin Resets*/
+.row {
+  margin: 0;
+  padding: 2em;
+}
+
+.top-header{
+  padding: 1em;
+}
+
+h4{
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.margin-reset{
+  margin: 0;
+  padding: 0;
+}
+
+.container .row {
+  margin: 0;
+}
+
+.nav-bar{
+  padding: .5em 2em;
+}
+
+/*About Section*/
+#about-section{
+  padding: 2em 4.5em;
+}
+
+.more a{
+  margin: .4em 1em;
+}
+
+.hidden{
+  display: none;
+}
+
+/*Portfolio*/
+.card-action{
+  font-weight: bold;
+}
+
+.card{
+   text-align: left;
+}
+
+#bug{
+  margin-right: 1em;
+}
+
+#wine{
+  margin-left: 1em;
+}
+
+@media only screen and (max-width: 750px){
+  .container{
+    width: 100%;
+  }
+}
+
+/*Contact Section*/
+.contact-email{
+  font-weight: bold;
+}
+
+.contact-icons li{
+  display: inline;
+  padding: 1em;
+}
+
+/*Footer*/
+footer{
+  text-align: left;
+}
+
+#footer-txt{
+  padding-bottom: 1.5em;
+}
+
+#name-header{
+  padding-left: 3.5em;
+}
+@media only screen and (min-width: 990px){
+  .button-collapse{
+    display: none;
+  }
+}
