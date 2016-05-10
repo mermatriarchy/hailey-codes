@@ -20,6 +20,20 @@ $('a#resume').click(function(){
     return false;
 });
 
+//Smooth scrolling for internal links
+$('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
 
 
-}); //Don't move this
+
+}); //End wrapper function
