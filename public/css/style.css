@@ -3,15 +3,15 @@
 /*/////////////////////////*/
 
 /*Global Styles: 16-24 */
-/*Navigation Styling: 25-54*/
+/*Navigation Styling: 26-54*/
 /*Fixed-icons Styling: 55-86*/
-/*Materialize Margin resets: 87-120 */
-/*About Section: 121-133*/
-/*Portfolio: 134-150*/
-/*Media Queries (portfolio): 151-162*/
-/*Contact Section: 163-172*/
-/*Footer Section: 173-185*/
-/*Media Queries (navigation): 186-192*/
+/*Materialize Margin resets: 87-121 */
+/*About Section: 122-134*/
+/*Portfolio: 135-151*/
+/*Media Queries (portfolio): 152-188*/
+/*Contact Section: 189-198*/
+/*Footer Section: 199-211*/
+/*Media Queries (navigation): 212-218*/
 
 /*Global Styles*/
 body{
@@ -24,7 +24,7 @@ a:hover{
 
 /*Navigation Styling*/
 
-nav h3{
+nav h4{
   text-align: center;
   position: static;
   margin-top: 0;
@@ -116,6 +116,7 @@ h4{
   position: fixed;
   top: 87%;
   left: 88%;
+  z-index: 9999;
 }
 
 /*About Section*/
@@ -156,7 +157,32 @@ and center/stack cards on small screens*/
   }
 
   #bug, #wine{
-    margin: 3em 0 auto;
+    padding: 0;
+  }
+
+  #bug{
+    margin: 1em .5em auto;
+  }
+
+  #wine{
+    margin: 3em .5em auto;
+  }
+
+  #scroll-up{
+    top: 87%;
+    left: 80%;
+  }
+
+  .row{
+    padding: .5em;
+  }
+
+  h4{
+    padding-top: .5em;
+  }
+
+  #title-span{
+    display: block;
   }
 }
 

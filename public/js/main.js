@@ -21,6 +21,7 @@ $('a#resume').click(function(){
 });
 
 //Smooth scrolling for internal links
+//Credit: https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
 $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
 
