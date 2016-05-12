@@ -1,4 +1,19 @@
-/**/ /**/ /**/
+/*/////////////////////////*/
+/*    TABLE OF CONTENTS    */
+/*/////////////////////////*/
+
+/*Global Styles: 16-24 */
+/*Navigation Styling: 25-54*/
+/*Fixed-icons Styling: 55-86*/
+/*Materialize Margin resets: 87-120 */
+/*About Section: 121-133*/
+/*Portfolio: 134-150*/
+/*Media Queries (portfolio): 151-162*/
+/*Contact Section: 163-172*/
+/*Footer Section: 173-185*/
+/*Media Queries (navigation): 186-192*/
+
+/*Global Styles*/
 body{
   text-align: center;
 }
@@ -69,7 +84,7 @@ nav h3{
   background-color: transparent;
 }
 
-/*Margin Resets*/
+/*Reset Materialize Margin Rules*/
 .row {
   margin: 0;
   padding: 2em;
@@ -133,6 +148,8 @@ h4{
   margin-left: 1em;
 }
 
+/*Media Query to remove gutters on mobile
+and center/stack cards on small screens*/
 @media only screen and (max-width: 750px){
   .container{
     width: 100%;
@@ -166,6 +183,7 @@ footer{
   padding-left: 4.2em;
 }
 
+/*Hide Hamburger Menu icon on larger screens*/
 @media only screen and (min-width: 990px){
   .button-collapse{
     display: none;
