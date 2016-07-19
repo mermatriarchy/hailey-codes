@@ -1,7 +1,11 @@
 $(document).ready(function() {
 
 //Trigger mobile hamburger menu
-  $(".button-collapse").sideNav();
+$(".button-collapse").sideNav(), 1000;
+
+//Autohide mobile nav after scroll
+//setTimeOut(sideNav(), 1000);
+
 
 //About section expander
 $('#more').click(function(){

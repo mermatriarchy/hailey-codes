@@ -169,8 +169,8 @@ and center/stack cards on small screens*/
   }
 
   #scroll-up{
-    top: 87%;
-    left: 80%;
+    top: 85%;
+    left: 78%;
   }
 
   .row{
@@ -181,8 +181,13 @@ and center/stack cards on small screens*/
     padding-top: .5em;
   }
 
-  #title-span{
+  #mobile-title{
+    font-size: .8em;
     display: block;
+  }
+
+  #about-section{
+    padding: 2em;
   }
 }
 
