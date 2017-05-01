@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  console.log('ready!');
+
+//Parallax
+$('.parallax').parallax();
 
 //Trigger mobile hamburger menu
 $(".button-collapse").sideNav(), 1000;
@@ -10,6 +14,7 @@ $(".button-collapse").sideNav(), 1000;
 //About section expander
 $('#more').click(function(){
   var $active = $('.more').find('.active');
+  console.log('clicked');
 
     //show extra info
      $('.hidden').stop().slideDown("slow").addClass('active');

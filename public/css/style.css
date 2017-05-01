@@ -23,6 +23,11 @@ a:hover{
 }
 
 /*Navigation Styling*/
+.top-header{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
 
 nav h4{
   text-align: center;
@@ -33,13 +38,17 @@ nav h4{
 
 .nav-bar li a{
   text-align: center;
-  display: inline;
   text-transform: uppercase;
   font-size: 1.3em;
 }
 
-.nav-bar a:hover{
-  background-color:#1565c0;
+.navbar-wrapper ul li{
+  display: inline-block;
+  padding: .5em 1em;
+}
+
+.navbar-wrapper ul li a:hover{
+  border-bottom: solid #0d47a1;
   opacity: 1;
 }
 
@@ -120,8 +129,8 @@ h4{
 }
 
 /*About Section*/
-#about-section{
-  padding: 2em 4.5em;
+#about{
+  padding: 15em 4.5em 2em;
 }
 
 .more a{
@@ -186,7 +195,7 @@ and center/stack cards on small screens*/
     display: block;
   }
 
-  #about-section{
+  #about{
     padding: 2em;
   }
 }
