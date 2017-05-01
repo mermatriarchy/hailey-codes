@@ -8,12 +8,17 @@ $(window).on("scroll touchmove", function () {
   $('.top-header').toggleClass('shrink', $(document).scrollTop() > 0);
 });
 
-//Trigger mobile hamburger menu
-$(".button-collapse").sideNav(), 1000;
-
-//Autohide mobile nav after scroll
-//setTimeOut(sideNav(), 1000);
-
+//Trigger scroll-up button appearance, fade-in project images
+ var options = [
+      {selector: '#scroll-up', offset: 500, callback: function(el) {
+        $(el).show();
+      } },
+      {selector: '#bug', offset: 500, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    
+    Materialize.scrollFire(options);
 
 //About section expander
 $('#more').click(function(){
@@ -26,6 +31,17 @@ $('#more').click(function(){
     //hide extra info again
     $active.stop().slideUp().removeClass('active');
    });
+
+//Text-Swap on More/Less button
+  $('#more').click(function() {
+      var el = $(this);
+      if (el.text() == el.data("text-swap")) {
+        el.text(el.data("text-original"));
+      } else {
+        el.data("text-original", el.text());
+        el.text(el.data("text-swap"));
+      }
+  });//end text swap
 
 //About section resume tab
 $('a#resume').click(function(){

@@ -85,12 +85,28 @@ a:hover{
   padding: .5em 1em;
 }
 
-.table-of-contents a.active, .navbar-wrapper ul li a:hover{
-  padding-left: 0;
+/* override scrollspy defaults */
+.section{
+  padding: 0;
+}
+
+.table-of-contents a {
+  padding: inherit;
+  height: inherit;
+}
+
+.table-of-contents a.active, .navbar-wrapper ul li a:hover {
   font-weight: inherit;
   border-left: inherit;
   border-bottom: solid #0d47a1;
   opacity: 1;
+  padding: inherit;
+  height: inherit;
+}
+
+.navbar-wrapper ul li a:hover {
+  border: none;
+  font-weight: 400;
 }
 
 /*Fixed Contact-icons styling*/
@@ -146,6 +162,7 @@ h4{
 }
 
 #scroll-up{
+  display:none;
   position: fixed;
   top: 87%;
   left: 88%;
