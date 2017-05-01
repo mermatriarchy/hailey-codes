@@ -1,8 +1,12 @@
 $(document).ready(function() {
-  console.log('ready!');
 
-//Parallax
-$('.parallax').parallax();
+//Underline sections on scroll
+$('.scrollspy').scrollSpy();
+
+//Resize fixed navbar on scroll
+$(window).on("scroll touchmove", function () {
+  $('.top-header').toggleClass('shrink', $(document).scrollTop() > 0);
+});
 
 //Trigger mobile hamburger menu
 $(".button-collapse").sideNav(), 1000;

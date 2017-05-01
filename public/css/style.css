@@ -22,18 +22,56 @@ a:hover{
   opacity: .7;
 }
 
+.row {
+  margin: 0;
+  padding: 2em;
+}
+
 /*Navigation Styling*/
-.top-header{
+.top-header {
   position: fixed;
   width: 100%;
   z-index: 999;
+  padding: 1em;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
 }
 
-nav h4{
-  text-align: center;
-  position: static;
+.top-header.shrink {
+  height: 5em;
+}
+
+.top-header.shrink div.nav-bar{
+  padding: 0;
+}
+
+.top-header.shrink div > div.navbar-wrapper{
+  text-align: left;
+}
+
+.top-header h3{
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.top-header.shrink h3 {
+  text-align: left;
+  font-size: 1.5em;
+  padding: 0;
+  margin: .5em;
+  display: inline-block;
+}
+
+.top-header.shrink div > div.navbar-wrapper ul{
+  display: inline-block;
+  padding: 0;
   margin-top: 0;
-  padding: 1.5em;
 }
 
 .nav-bar li a{
@@ -47,18 +85,12 @@ nav h4{
   padding: .5em 1em;
 }
 
-.navbar-wrapper ul li a:hover{
+.table-of-contents a.active, .navbar-wrapper ul li a:hover{
+  padding-left: 0;
+  font-weight: inherit;
+  border-left: inherit;
   border-bottom: solid #0d47a1;
   opacity: 1;
-}
-
-#nav-mobile li{
-  display: inline;
-  padding: .5em 1em;
-}
-
-#nav-mobile li a, .side-nav li a{
-  padding: .5em;
 }
 
 /*Fixed Contact-icons styling*/
@@ -94,14 +126,6 @@ nav h4{
 }
 
 /*Reset Materialize Margin Rules*/
-.row {
-  margin: 0;
-  padding: 2em;
-}
-
-.top-header{
-  padding: 1em;
-}
 
 h4{
   margin: 0;
@@ -130,7 +154,7 @@ h4{
 
 /*About Section*/
 #about{
-  padding: 15em 4.5em 2em;
+  padding: 16em 4.5em 2em;
 }
 
 .more a{
