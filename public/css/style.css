@@ -33,11 +33,14 @@ a:hover{
   width: 100%;
   z-index: 999;
   padding: 1em;
+  -webkit-box-shadow: 0 0 1.5em 1em #a2c5ef;
+    -moz-box-shadow: 0 0 1.5em 1em #a2c5ef;
+        box-shadow: 0 0 1.5em 1em #a2c5ef;
   -webkit-transition: height 1s;
-  -moz-transition: height 1s;
-  -ms-transition: height 1s;
-  -o-transition: height 1s;
-  transition: height 1s;
+    -moz-transition: height 1s;
+     -ms-transition: height 1s;
+      -o-transition: height 1s;
+       transition: height 1s;
 }
 
 .top-header.shrink {
@@ -143,9 +146,13 @@ a:hover{
 
 /*Reset Materialize Margin Rules*/
 
-h4{
+h4, h5{
   margin: 0;
   text-transform: uppercase;
+}
+
+h5{
+  padding-top: .5em;
 }
 
 .margin-reset{
@@ -203,12 +210,8 @@ h4{
    text-align: left;
 }
 
-#bug{
-  margin-right: 1em;
-}
-
-#wine{
-  margin-left: 1em;
+.center-card {
+  margin: 0 auto;
 }
 
 /*Media Query to remove gutters on mobile
