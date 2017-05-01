@@ -3,16 +3,14 @@ $(document).ready(function() {
 //Underline sections on scroll
 $('.scrollspy').scrollSpy();
 
-//Resize fixed navbar on scroll
+//Resize fixed navbar on scroll, show scroll-to-top button
 $(window).on("scroll touchmove", function () {
   $('.top-header').toggleClass('shrink', $(document).scrollTop() > 0);
+  $('#scroll-up').scrollTop(100).show(400);
 });
 
-//Trigger scroll-up button appearance, fade-in project images
+//Fade-in project cards
  var options = [
-      {selector: '#scroll-up', offset: 500, callback: function(el) {
-        $(el).show();
-      } },
       {selector: '#bug', offset: 500, callback: function(el) {
         Materialize.fadeInImage($(el));
       } }
