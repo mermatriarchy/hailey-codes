@@ -230,11 +230,11 @@ footer{
   text-align: left;
 }
 
-#name-header{
+.name-header{
   padding-left: 2.5em;
 }
 
-#updated-on{
+.updated-on {
   padding-left: 4.2em;
 }
 
@@ -260,6 +260,7 @@ and center/stack cards on small screens*/
 }
 
 @media only screen and (min-width: 691px) and (max-width: 992px) {
+  /* navbar resets*/
   .top-header.shrink div > div.navbar-wrapper ul {
     float: right;
   }
@@ -270,6 +271,7 @@ and center/stack cards on small screens*/
 }
 
 @media only screen and (max-width: 571px){
+  /* navbar resets*/
   h3{
     font-size: 2rem;
   }
@@ -280,18 +282,32 @@ and center/stack cards on small screens*/
 }
 
 @media only screen and (max-width: 508px){
+  /* navbar resets*/
   .navbar-wrapper ul li{
     padding: .5em;
   }
+
+  /*footer*/
+  .name-header{
+    padding-left: 1.5em;
+  }
+
+  .updated-on {
+    padding-left: 2.4em;
+  }
+
 }
 
 @media only screen and (max-width: 424px){
+  /* navbar resets*/
   .navbar-wrapper ul li{
     padding: .4em;
   }
+
 }
 
 @media only screen and (max-width: 410px){
+  /* navbar resets*/
   h3 {
     font-size: 1.8rem;
   }
