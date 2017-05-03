@@ -25,6 +25,7 @@ a:hover{
 .row {
   margin: 0;
   padding: 2em;
+  overflow: auto;
 }
 
 /*Navigation Styling*/
@@ -146,7 +147,7 @@ a:hover{
 
 /*Reset Materialize Margin Rules*/
 
-h4, h5{
+h4, h5.portf {
   margin: 0;
   text-transform: uppercase;
 }
@@ -214,48 +215,6 @@ h5{
   margin: 0 auto;
 }
 
-/*Media Query to remove gutters on mobile
-and center/stack cards on small screens*/
-@media only screen and (max-width: 750px){
-  .container{
-    width: 100%;
-  }
-
-  #bug, #wine{
-    padding: 0;
-  }
-
-  #bug{
-    margin: 1em .5em auto;
-  }
-
-  #wine{
-    margin: 3em .5em auto;
-  }
-
-  #scroll-up{
-    top: 85%;
-    left: 78%;
-  }
-
-  .row{
-    padding: .5em;
-  }
-
-  h4{
-    padding-top: .5em;
-  }
-
-  #mobile-title{
-    font-size: .8em;
-    display: block;
-  }
-
-  #about{
-    padding: 2em;
-  }
-}
-
 /*Contact Section*/
 .contact-email{
   font-weight: bold;
@@ -279,9 +238,65 @@ footer{
   padding-left: 4.2em;
 }
 
-/*Hide Hamburger Menu icon on larger screens*/
-@media only screen and (min-width: 990px){
-  .button-collapse{
-    display: none;
+/*Media Query to remove gutters on mobile
+and center/stack cards on small screens*/
+@media only screen and (max-width: 750px){
+  .container{
+    width: 100%;
+  }
+
+  #scroll-up{
+    top: 85%;
+    left: 78%;
+  }
+
+  .row{
+    padding: .5em;
+  }
+
+  h4{
+    padding-top: .5em;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 992px) {
+  .top-header.shrink div > div.navbar-wrapper ul {
+    float: right;
+  }
+
+  .navbar-wrapper ul li{
+    padding: .5em .8em;
+  }
+}
+
+@media only screen and (max-width: 571px){
+  h3{
+    font-size: 2rem;
+  }
+
+  div.navbar-wrapper ul {
+    margin:0;
+  }
+}
+
+@media only screen and (max-width: 508px){
+  .navbar-wrapper ul li{
+    padding: .5em;
+  }
+}
+
+@media only screen and (max-width: 424px){
+  .navbar-wrapper ul li{
+    padding: .4em;
+  }
+}
+
+@media only screen and (max-width: 410px){
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .navbar-wrapper ul li{
+    font-size: .9em;
   }
 }

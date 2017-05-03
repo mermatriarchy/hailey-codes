@@ -5,18 +5,15 @@ $('.scrollspy').scrollSpy();
 
 //Resize fixed navbar on scroll, show scroll-to-top button
 $(window).on("scroll touchmove", function () {
-  $('.top-header').toggleClass('shrink', $(document).scrollTop() > 0);
+  if ($(window).width() > 680) {
+    //Don't resize navbar is the screen is smaller than 571px 
+    //in reality ends up being closer to 587px? either way, that's fine
+    $('.top-header').toggleClass('shrink', $(document).scrollTop() > 0);
+  }
+
+  //add scroll-to-top button after scroll is initiated
   $('#scroll-up').scrollTop(100).show(400);
 });
-
-//Fade-in project cards
- var options = [
-      {selector: '#bug', offset: 500, callback: function(el) {
-        Materialize.fadeInImage($(el));
-      } }
-    ];
-    
-    Materialize.scrollFire(options);
 
 //About section expander
 $('#more').click(function(){
