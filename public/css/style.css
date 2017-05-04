@@ -300,6 +300,15 @@ and center/stack cards on small screens*/
 
 @media only screen and (max-width: 424px){
   /* navbar resets*/
+  .nav-bar{
+    padding: 0;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    margin: 1em 0 .3em;
+  }
+
   .navbar-wrapper ul li{
     padding: .4em;
   }
@@ -308,9 +317,6 @@ and center/stack cards on small screens*/
 
 @media only screen and (max-width: 410px){
   /* navbar resets*/
-  h3 {
-    font-size: 1.8rem;
-  }
 
   .navbar-wrapper ul li{
     font-size: .9em;
