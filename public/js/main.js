@@ -15,6 +15,14 @@ $(window).on("scroll touchmove", function () {
   $('#scroll-up').scrollTop(100).show(400);
 });
 
+//Remove row class from cards on screens smaller than 571px width
+//to allow cards to stack
+$(window).resize( function(){
+  if ($(window).width() < 571){
+    $('div.stack-cards').removeClass("row, valign-wrapper");
+  }
+});
+
 //About section expander
 $('#more').click(function(){
   var $active = $('.more').find('.active');

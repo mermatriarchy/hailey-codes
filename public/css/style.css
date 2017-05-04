@@ -268,6 +268,32 @@ and center/stack cards on small screens*/
   .navbar-wrapper ul li{
     padding: .5em .8em;
   }
+  /*.row .col.l4 {
+    width: 33.33333%;
+  }*/
+
+}
+
+@media only screen and (max-width: 751px) {
+  /* about section */
+  #about {
+    padding: 14em 4.5em 2em;
+  }
+  /* contact */
+  #contact {
+    margin-top: .8em;
+  }
+
+  .contact-icons {
+    padding-bottom: .5em;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .row .col.m6 {
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width: 571px){
@@ -278,6 +304,16 @@ and center/stack cards on small screens*/
 
   div.navbar-wrapper ul {
     margin:0;
+  }
+
+  /* about section */
+  #about {
+    padding: 12em 4.5em 2em;
+  }
+  
+  /* portfolio */
+  .row .col.s12{
+    padding: 1em 4em;
   }
 }
 
@@ -313,11 +349,20 @@ and center/stack cards on small screens*/
     padding: .4em;
   }
 
+  /*about section*/
+  #about{
+    padding: 8.8em 1.9em 2em;
+  }
+
+  /* portfolio */
+  .row .col.s12{
+    padding: 1em 3em;
+  }
+
 }
 
 @media only screen and (max-width: 410px){
   /* navbar resets*/
-
   .navbar-wrapper ul li{
     font-size: .9em;
   }
