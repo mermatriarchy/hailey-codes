@@ -6,7 +6,7 @@ $('.scrollspy').scrollSpy();
 //Resize fixed navbar on scroll, show scroll-to-top button
 $(window).on("scroll touchmove", function () {
   if ($(window).width() > 680) {
-    //Don't resize navbar is the screen is smaller than 571px 
+    //Don't resize navbar is the screen is smaller than 571px
     //in reality ends up being closer to 587px? either way, that's fine
     $('.top-header').toggleClass('shrink', $(document).scrollTop() > 0);
   }
@@ -25,9 +25,7 @@ $(window).resize( function(){
 
 //About section expander
 $('#more').click(function(){
-  var $active = $('.more').find('.active');
-  console.log('clicked');
-
+  var $active = $('.more .active');
     //show extra info
      $('.hidden').stop().slideDown("slow").addClass('active');
 
@@ -36,7 +34,7 @@ $('#more').click(function(){
    });
 
 //Text-Swap on More/Less button
-  $('#more').click(function() {
+$('#more').click(function() {
       var el = $(this);
       if (el.text() == el.data("text-swap")) {
         el.text(el.data("text-original"));
