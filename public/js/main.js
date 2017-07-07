@@ -9,7 +9,7 @@ $('.scrollspy').scrollSpy();
 function navScroll(){
 $(window).on("scroll touchmove", function () {
   if ($(window).width() > 680) {
-    //Don't resize navbar is the screen is smaller than 571px 
+    //Don't resize navbar is the screen is smaller than 571px
     //in reality ends up being closer to 587px? either way, that's fine
     $('.top-header').toggleClass('shrink', $(document).scrollTop() > 0);
   }
@@ -33,8 +33,11 @@ $(window).resize( function(){
 function expandText(){
 $('#more').click(function(){
   var $active = $('.more .active');
+<<<<<<< HEAD
   console.log('clicked');
 
+=======
+>>>>>>> 5a3d056aae0c09bb0c512be084ef22df75ae5a16
     //show extra info
      $('.hidden').stop().slideDown("slow").addClass('active');
 
