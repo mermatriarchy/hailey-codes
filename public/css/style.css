@@ -136,13 +136,12 @@ a:hover{
   border-top: 1em solid #1565c0;
 }
 
-.contact-top a:hover{
-  opacity: .7;
+.contact-top a:hover, .icon-fix a:hover{
   background-color: transparent;
 }
 
-.icon-fix a:hover{
-  background-color: transparent;
+.contact-top a:hover{
+  opacity: .7;
 }
 
 /*Reset Materialize Margin Rules*/
@@ -268,9 +267,6 @@ and center/stack cards on small screens*/
   .navbar-wrapper ul li{
     padding: .5em .8em;
   }
-  /*.row .col.l4 {
-    width: 33.33333%;
-  }*/
 
 }
 
@@ -291,6 +287,7 @@ and center/stack cards on small screens*/
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* portfolio */
   .row .col.m6 {
     width: 45%;
   }

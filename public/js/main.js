@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
 //Underline sections on scroll
+function initScrollSpy(){
 $('.scrollspy').scrollSpy();
+}
 
 //Resize fixed navbar on scroll, show scroll-to-top button
+function navScroll(){
 $(window).on("scroll touchmove", function () {
   if ($(window).width() > 680) {
     //Don't resize navbar is the screen is smaller than 571px 
@@ -14,18 +17,22 @@ $(window).on("scroll touchmove", function () {
   //add scroll-to-top button after scroll is initiated
   $('#scroll-up').scrollTop(100).show(400);
 });
+}
 
 //Remove row class from cards on screens smaller than 571px width
 //to allow cards to stack
+function stackCards(){
 $(window).resize( function(){
   if ($(window).width() < 571){
     $('div.stack-cards').removeClass("row, valign-wrapper");
   }
 });
+}
 
 //About section expander
+function expandText(){
 $('#more').click(function(){
-  var $active = $('.more').find('.active');
+  var $active = $('.more .active');
   console.log('clicked');
 
     //show extra info
@@ -34,8 +41,10 @@ $('#more').click(function(){
     //hide extra info again
     $active.stop().slideUp().removeClass('active');
    });
+}
 
 //Text-Swap on More/Less button
+function textSwap(){
   $('#more').click(function() {
       var el = $(this);
       if (el.text() == el.data("text-swap")) {
@@ -45,16 +54,20 @@ $('#more').click(function(){
         el.text(el.data("text-swap"));
       }
   });//end text swap
+}
 
 //About section resume tab
-$('a#resume').click(function(){
+function openResume() {
+	$('a#resume').click(function(){
     window.open(this.href);
     return false;
 });
+}
 
 //Smooth scrolling for internal links
 //Credit: https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
-$('a[href^="#"]').on('click',function (e) {
+function smoothScrolling() {
+	$('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
 
       var target = this.hash;
@@ -66,7 +79,15 @@ $('a[href^="#"]').on('click',function (e) {
           window.location.hash = target;
       });
   });
+}
 
-
+//invoke functions
+initScrollSpy();
+navScroll();
+stackCards();
+expandText();
+textSwap();
+openResume();
+smoothScrolling();
 
 }); //End wrapper function
