@@ -7,7 +7,7 @@ $('.scrollspy').scrollSpy();
 
 //Resize fixed navbar on scroll, show scroll-to-top button
 function navScroll(){
-$(window).on("scroll touchmove", function () {
+$(window).on("scroll touchmove", () => {
   if ($(window).width() > 680) {
     //Don't resize navbar is the screen is smaller than 571px
     //in reality ends up being closer to 587px? either way, that's fine
@@ -22,7 +22,7 @@ $(window).on("scroll touchmove", function () {
 //Remove row class from cards on screens smaller than 571px width
 //to allow cards to stack
 function stackCards(){
-$(window).resize( function(){
+$(window).resize( () => {
   if ($(window).width() < 571){
     $('div.stack-cards').removeClass("row, valign-wrapper");
   }
@@ -31,13 +31,8 @@ $(window).resize( function(){
 
 //About section expander
 function expandText(){
-$('#more').click(function(){
+$('#more').click( () => {
   var $active = $('.more .active');
-<<<<<<< HEAD
-  console.log('clicked');
-
-=======
->>>>>>> 5a3d056aae0c09bb0c512be084ef22df75ae5a16
     //show extra info
      $('.hidden').stop().slideDown("slow").addClass('active');
 
@@ -48,7 +43,7 @@ $('#more').click(function(){
 
 //Text-Swap on More/Less button
 function textSwap(){
-  $('#more').click(function() {
+  $('#more').click( function(){
       var el = $(this);
       if (el.text() == el.data("text-swap")) {
         el.text(el.data("text-original"));
@@ -61,7 +56,7 @@ function textSwap(){
 
 //About section resume tab
 function openResume() {
-	$('a#resume').click(function(){
+	$('a#resume').click( function(){
     window.open(this.href);
     return false;
 });
@@ -70,7 +65,7 @@ function openResume() {
 //Smooth scrolling for internal links
 //Credit: https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
 function smoothScrolling() {
-	$('a[href^="#"]').on('click',function (e) {
+	$('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
 
       var target = this.hash;
@@ -78,7 +73,7 @@ function smoothScrolling() {
 
       $('html, body').stop().animate({
           'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
+      }, 900, 'swing', () => {
           window.location.hash = target;
       });
   });
