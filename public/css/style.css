@@ -146,7 +146,7 @@ a:hover{
 
 /*Reset Materialize Margin Rules*/
 
-h4, h5.portf {
+h4 {
   margin: 0;
   text-transform: uppercase;
 }
